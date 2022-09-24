@@ -1,0 +1,13 @@
+{
+    "presets": [
+      ["@babel/preset-env",{
+        "useBuiltIns": "usage",
+        "targets": {
+          "chrome": "26",
+          "ie": "10"
+        }
+      }],
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ]
+}
