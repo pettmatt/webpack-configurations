@@ -1,11 +1,10 @@
 import React from 'react'
-import { hot } from 'react-hot-loader/root'
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import { createRoot } from 'react-dom/client'
+//import { hot } from 'react-hot-loader/root' // Change to "Fast Refresh" https://www.npmjs.com/package/react-hot-loader
 import App from './App'
+import './css/index.css'
 
-const render = (App) => {
-  ReactDOM.render(<App />, document.getElementById('root'))
-}
+const root = createRoot(document.getElementById('root'))
 
-render(hot(App))
+root.render(<App />)
+//root.render(hot(App)) // Just for myself (as a reminder)
